@@ -1,3 +1,5 @@
+import { FC } from 'react';
+import Personaje from '../../types/personaje.types';
 import './grilla-personajes.css';
 import TarjetaPersonaje from './tarjeta-personaje.componente';
 
@@ -9,12 +11,16 @@ import TarjetaPersonaje from './tarjeta-personaje.componente';
  * 
  * @returns un JSX element 
  */
-const GrillaPersonajes = () => {
+
+
+interface IGrillaProps {
+    personajes: Personaje[]
+}
+
+const GrillaPersonajes:FC<IGrillaProps> = ({personajes}) => {
 
     return <div className="grilla-personajes">
-       <TarjetaPersonaje />
-       <TarjetaPersonaje />
-       <TarjetaPersonaje />
+       <TarjetaPersonaje personajesPaginados={personajes} />
     </div>
 }
  
