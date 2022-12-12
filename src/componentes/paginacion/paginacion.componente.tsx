@@ -1,3 +1,4 @@
+
 import React, { FC } from 'react';
 import { useSelector } from '../../store/store';
 import './paginacion.css';
@@ -16,10 +17,6 @@ interface IPaginacionProps {
     setPagina: React.Dispatch<React.SetStateAction<number>>
 }
 
-/* type IPaginacionProps = {
-    pagina: number,
-    setPagina: React.Dispatch<React.SetStateAction<number>>
-} */
 
 const Paginacion:FC<IPaginacionProps> = ({ pagina, setPagina }) => {
 

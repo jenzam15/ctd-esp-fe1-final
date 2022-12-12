@@ -44,8 +44,11 @@ const PaginaDetalle:FC = () => {
         </div>
         <h4>Lista de episodios donde apareció el personaje</h4>
         <div className={"episodios-grilla"}>
+            <TarjetaEpisodio />
+            <TarjetaEpisodio />
+            <TarjetaEpisodio />
 
-           {/*  <TarjetaEpisodio episodios={personaje?.episode} /> */}
+           
 
         </div>
     </div>

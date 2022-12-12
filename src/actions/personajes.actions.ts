@@ -1,7 +1,6 @@
 import { Action, ActionCreator, ThunkAction } from "@reduxjs/toolkit";
 import { getPersonajes } from "../services/getPersonajes";
 import { personajeByName } from "../services/getPersonajeByName";
-/* import { getEpisodio } from "../services/getEpidosio"; */
 import { Episode, Personaje } from "../types/personaje.types";
 import { IRootState } from "../store/store";
 

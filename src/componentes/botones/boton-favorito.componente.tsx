@@ -4,13 +4,19 @@ import { agregarFavorito, eliminarFavorito } from '../../actions/personajes.acti
 import './boton-favorito.css';
 import { FC } from 'react';
 import Personaje from '../../types/personaje.types';
-/**
+
+
+/** DOCUMENTACIÓN:
+ * 
  * Boton que indica si un elemento es favorito o no, y da la posibilidad de marcarlo/desmarcarlo
  * 
- * Deberás tipar las propiedades si usas este componente
+ * @author: Jenny Zambrano
+ * @param {{
+ *    esFavorito: boolean,
+ *    onClick: function
+ * }} props 
+ * @returns JSX element
  * 
- * 
- * @returns un JSX element 
  */
 
 
